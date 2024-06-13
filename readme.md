@@ -62,7 +62,7 @@ Wanderlust is a dynamic web application inspired by Airbnb, built using the MERN
 - ✅ **User Authentication**: Secure user registration and login functionality.
 - ✅ **User Authorization**: Role-based access control for different user types.
 - ✅ **Image Uploading**: Allow users to upload images for their property listings.
-- **Map Marker for Location**: Integrate maps to display property locations.
+- ✅ **Map Marker for Location**: Integrate maps to display property locations.
 - ✅ **Listing Reviews**: Enable users to leave reviews and ratings for listings.
 - **Listing Search**: Implement search functionality to find specific listings.
 - **Tax System**: Add a tax calculation system for property listings.
