@@ -51,7 +51,7 @@ async function main() {
 }
 
 app.get("/", (req, res) => {
-  res.send("Hello Hi");
+  res.redirect("/listings");
 });
 
 app.use(session(sessionOptions));

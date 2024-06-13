@@ -118,7 +118,73 @@ body {
   padding-right: 0;
 }
 
+/* Maps */
 #map {
   height: 400px;
   width: 63vh;
+}
+
+/* Filters */
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-grp {
+  display: flex;
+  justify-content: space-around;
+  overflow: auto;
+  white-space: nowrap;
+}
+.filter {
+  text-align: center;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  opacity: 0.7;
+  text-decoration: none;
+  color: black;
+}
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.filter p {
+  font-size: 0.8rem;
+}
+
+.active {
+  opacity: 1;
+}
+
+/* Tax Toggle */
+.tax-info {
+  display: none;
+}
+.tax-toggle {
+  border: 1px solid black;
+  border-radius: 1rem;
+  height: 3.25rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Search Bar */
+.btn-search {
+  background-color: #fe424d !important;
+  color: #fff !important;
+  border-radius: 25px !important;
+}
+
+.btn-search i {
+  display: inline;
+  margin-right: 0.5rem;
+}
+
+.search-input {
+  border-radius: 25px !important;
+  padding: 0.5rem 3rem 0.5rem 3rem !important;
 }

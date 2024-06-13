@@ -35,11 +35,28 @@
           <div class="invalid-feedback">Country Name should be valid</div>
         </div>
       </div>
-      <div class="mb-3">
-        <label for="location" class="form-label">Location</label>
-        <input type="text" name="listing[location]" placeholder="Enter Location" class="form-control" id="location" required />
-        <div class="valid-feedback">Location Looks Good!</div>
-        <div class="invalid-feedback">Location should be valid</div>
+      <div class="row">
+        <div class="mb-3 col-md-4">
+          <label for="location" class="form-label">Location</label>
+          <input type="text" name="listing[location]" placeholder="Enter Location" class="form-control" id="location" required />
+          <div class="valid-feedback">Location Looks Good!</div>
+          <div class="invalid-feedback">Location should be valid</div>
+        </div>
+        <div class="mb-3 col-md-8">
+          <label for="category" class="form-label">Category</label>
+          <select name="listing[category]" class="form-select" id="category">
+            <option value="Rooms">Rooms</option>
+            <option value="Iconic Cities">Iconic Cities</option>
+            <option value="Mountains">Mountains</option>
+            <option value="Castles">Castles</option>
+            <option value="Amazing Pools">Amazing Pools</option>
+            <option value="Camping">Camping</option>
+            <option value="Farms">Farms</option>
+            <option value="Artic">Artic</option>
+            <option value="Domes">Domes</option>
+            <option value="Ships">Ships</option>
+          </select>
+        </div>
       </div>
       <button type="submit" class="btn btn-dark add-btn mt-3 mb-3">Add</button>
     </form>

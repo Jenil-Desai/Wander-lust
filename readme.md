@@ -2,13 +2,22 @@
 
 ## Overview
 
-Wanderlust is a dynamic web application inspired by Airbnb, built using the MERN stack (MongoDB, Express.js, Node.js) with EJS and EJS-mate templating engines. The platform allows users to seamlessly manage property listings including creating, viewing, editing, and deleting listings.
+Wanderlust is a dynamic web application inspired by Airbnb, built using the MERN stack (MongoDB, Express.js, Node.js) with EJS and EJS-mate templating engines. The platform allows users to seamlessly manage property listings, including creating, viewing, editing, and deleting listings. Additionally, it offers user signup and login functionality, review management, and various advanced features to enhance user experience. The application is fully optimized for mobile devices.
 
 ## Features
 
 - **Listing Management**: Effortlessly create, view, edit, and delete property listings.
+- **User Signup and Login**: Secure user registration and login functionality.
+- **Review Management**: Add and delete reviews for property listings.
 - **User-Friendly Interface**: Browse through properties with detailed descriptions and images.
 - **Dynamic Templates**: EJS and EJS-mate ensure a responsive and reusable HTML structure.
+- **Map Integration**: Display property locations on a map based on the entered address.
+- **Category Filtering**: Filter listings based on categories.
+- **Search Functionality**: Search for listings based on keywords.
+- **New Category Field**: Add and manage categories for listings.
+- **Tax Switch**: Toggle tax inclusion for listing prices.
+- **Listing and Review Owners**: View information about listing and review owners.
+- **Mobile Optimization**: Fully responsive design for an enhanced mobile experience.
 
 ## Technologies Used
 
@@ -16,6 +25,45 @@ Wanderlust is a dynamic web application inspired by Airbnb, built using the MERN
 - **Express.js**: To build a powerful and flexible backend.
 - **Node.js**: Ensuring a fast and efficient runtime environment.
 - **EJS & EJS-mate**: For creating dynamic and reusable HTML templates.
+
+## Environment Variables
+
+Create a .env file in the root directory of your project and add the following environment variables:
+
+```bash
+MONGO_URL=your_mongodb_url
+secret=secret_string
+CLOUD_NAME=your_cloudinary_cloud_name
+CLOUD_API_KEY=your_cloudinary_api_key
+CLOUD_API_SECRET=your_cloudinary_api_secret
+MAP_TOEKN=your_mapbox_public_token
+```
+
+Replace your_mongodb_connection_string, your_session_secret, and your_google_maps_api_key with your actual MongoDB URI, session secret, and Google Maps API key.
+
+## initialization
+
+1. Navigate to init directory:
+
+   ```bash
+   cd init
+   ```
+
+2. Open index.js file and change the owner object ID to new user object id. You will get your user_object_id after siging up new user.
+
+3. Go To mongodb and find new user and copy object ID.
+
+4. Run the initializer:
+
+   ```bash
+   node index.js
+   ```
+
+5. If everything is proper then it will show:
+
+   ```bash
+   Data Was Initialized
+   ```
 
 ## Installation
 
@@ -56,17 +104,12 @@ Wanderlust is a dynamic web application inspired by Airbnb, built using the MERN
 - **User Signup and Login**: Register and log in to access personalized features.
 - **Add Review**: Leave reviews and ratings for property listings.
 - **Delete Review**: Remove reviews from property listings.
-
-## Future Features
-
-- ✅ **User Authentication**: Secure user registration and login functionality.
-- ✅ **User Authorization**: Role-based access control for different user types.
-- ✅ **Image Uploading**: Allow users to upload images for their property listings.
-- ✅ **Map Marker for Location**: Integrate maps to display property locations.
-- ✅ **Listing Reviews**: Enable users to leave reviews and ratings for listings.
-- **Listing Search**: Implement search functionality to find specific listings.
-- **Tax System**: Add a tax calculation system for property listings.
-- **Filters**: Provide filters for users to refine their search results.
+- **Map View**: View property locations on a map.
+- **Filter Listings**: Use categories to filter property listings.
+- **Search Listings**: Search for listings using keywords.
+- **Toggle Tax**: Include or exclude tax in listing prices.
+- **View Owners**: See information about listing and review owners.
+- **Mobile Optimization**: Enjoy a fully responsive design for a seamless mobile experience.
 
 ## Contributing
 

@@ -4,7 +4,18 @@ const mapToken = process.env.MAP_TOKEN;
 const geocodingCilent = mbxGeocoding({ accessToken: mapToken });
 
 module.exports.index = async (req, res) => {
-  const allListings = await Listing.find({});
+  let { category, title } = req.query;
+  let filter = {};
+
+  if (category) {
+    filter.category = category;
+  }
+
+  if (title) {
+    filter.title = title;
+  }
+
+  const allListings = await Listing.find(filter);
   res.render("./listings/index.ejs", { allListings });
 };
 
@@ -45,6 +56,7 @@ module.exports.createListing = async (req, res, next) => {
 module.exports.renderEditForm = async (req, res) => {
   const { id } = req.params;
   const listing = await Listing.findById(id);
+
   if (!listing) {
     req.flash("error", "Listing Not Found");
     res.redirect("/listings");
@@ -60,7 +72,7 @@ module.exports.updateListing = async (req, res) => {
   const { id } = req.params;
   const listing = await Listing.findByIdAndUpdate(id, { ...req.body.listing });
 
-  if (typeof req.file !== undefined) {
+  if (typeof req.file !== "undefined") {
     const url = req.file.path;
     const filename = req.file.filename;
     listing.image = { url, filename };
