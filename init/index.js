@@ -1,10 +1,9 @@
+require("dotenv").config();
 const mongoose = require("mongoose");
 const initData = require("./Data.js");
 const Listing = require("../Models/listings.js");
 const mbxGeocoding = require("@mapbox/mapbox-sdk/services/geocoding");
 const geocodingClient = mbxGeocoding({ accessToken: process.env.MAP_TOKEN });
-
-require("dotenv").config();
 
 async function main() {
   await mongoose.connect(process.env.MONGO_URL);
