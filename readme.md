@@ -26,6 +26,27 @@ Wanderlust is a dynamic web application inspired by Airbnb, built using the MERN
 - **Node.js**: Ensuring a fast and efficient runtime environment.
 - **EJS & EJS-mate**: For creating dynamic and reusable HTML templates.
 
+## Dependencies
+
+The project uses the following packages:
+
+- **@mapbox/mapbox-sdk**: Mapbox SDK for integrating maps and location services.
+- **cloudinary**: Cloudinary library for managing image uploads and storage.
+- **connect-flash**: Flash messages for Express applications.
+- **connect-mongo**: MongoDB session store for Express and Connect.
+- **dotenv**: Loads environment variables from a .env file.
+- **ejs**: Embedded JavaScript templating.
+- **ejs-mate**: Layout, partials, and blocks for EJS templates.
+- **express**: Web framework for Node.js.
+- **express-session**: Session middleware for Express.
+- **joi**: Data validation library for JavaScript.
+- **method-override**: Allows using HTTP verbs such as PUT or DELETE in places where the client doesn't support it.
+- **mongoose**: MongoDB object modeling tool designed to work in an asynchronous environment.
+- **multer**: Middleware for handling multipart/form-data, used for file uploads.
+- **multer-storage-cloudinary**: Multer storage engine for Cloudinary.
+- **nodemon**: Tool that helps develop Node.js based applications by automatically restarting the node application when file changes are detected.
+- **passport**: Authentication middleware for Node.js.
+
 ## Environment Variables
 
 Create a .env file in the root directory of your project and add the following environment variables:

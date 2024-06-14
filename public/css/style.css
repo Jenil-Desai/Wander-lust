@@ -47,6 +47,11 @@ body {
   margin-right: 1rem;
 }
 
+.f-info-socials a {
+  color: #222;
+  text-decoration: none;
+}
+
 .f-info {
   text-align: center;
   height: 8rem;
