@@ -47,6 +47,15 @@ The project uses the following packages:
 - **nodemon**: Tool that helps develop Node.js based applications by automatically restarting the node application when file changes are detected.
 - **passport**: Authentication middleware for Node.js.
 
+## Live Demo
+
+- Check out the live demo of the project [Here](https://wanderlust-929z.onrender.com/listings).
+- The project will take some time to load considering that it is hosted on the free tier. Therefore, maintain patient.
+
+## Version Releases
+
+Track the version releases and updates on our Notion page [here](https://jenil-desai.notion.site/Version-Releases-Wanderlust-c373e18729c844dcae64495edb58f865?pvs=4).
+
 ## Environment Variables
 
 Create a .env file in the root directory of your project and add the following environment variables:
